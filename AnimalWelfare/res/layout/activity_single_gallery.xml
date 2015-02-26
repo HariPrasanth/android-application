@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector_home"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- Roll Number -->
+
+    <TextView
+        android:id="@+id/iname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:textColor="#0b0704"
+        android:textSize="20dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- status -->
+
+    <TextView
+        android:id="@+id/icaption"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imagemain"
+        android:layout_below="@id/iname"
+        android:layout_marginTop="1dip"        
+        android:text="Content"
+        android:textColor="#343434"
+        android:textSize="15dip" />
+
+    <ImageView
+        android:id="@+id/imagemain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/iname"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/icaption"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_photos" />
+
+</RelativeLayout>
